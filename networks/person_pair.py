@@ -5,9 +5,9 @@ import torch.nn.functional as F
 
 from resnet_v1 import ResNet, Bottleneck
 
-class FirstGlance_v1(nn.Module):
+class person_pair(nn.Module):
     def __init__(self, num_classes = 3):
-        super(FirstGlance_v1, self).__init__()
+        super(person_pair, self).__init__()
         self.resnet101_union = ResNet(Bottleneck, [3, 4, 23, 3])
         self.resnet101_a = ResNet(Bottleneck, [3, 4, 23, 3])
         self.resnet101_b = self.resnet101_a

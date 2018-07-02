@@ -1,5 +1,5 @@
 import argparse
-import os
+import os, sys
 import shutil
 import time
 import numpy as np
@@ -18,8 +18,8 @@ from torch.utils.data import DataLoader
 import torch.nn.functional as F
 import gc
 
-from pisc_graph import PiscBboxGraphVggReason
-from dataset import FgBboxesGraph
+from networks.GRM import GRM
+from dataset.dataset import SRDataset
 
 model_names = sorted(name for name in models.__dict__
 	if name.islower() and not name.startswith("__")
@@ -70,7 +70,7 @@ def get_test_set(data_dir, feature_dir, test_list):
 			transforms.ToTensor(),
 			normalize])  # what about horizontal flip
 
-	test_set = FgBboxesGraph(data_dir, feature_dir, test_list, test_data_transform, test_full_transform )
+	test_set = SRDataset(data_dir, feature_dir, test_list, test_data_transform, test_full_transform )
 	test_loader = DataLoader(dataset=test_set, num_workers=args.workers,
 							batch_size=args.batch_size, shuffle=False)
 	return test_loader
@@ -89,7 +89,7 @@ def main():
 
 	# load network
 	print '====> Loading the network...'
-	model = PiscBboxGraphVggReason(num_class=args.num_classes, adjacency_matrix=args.adjacency_matrix)
+	model = GRM(num_class=args.num_classes, adjacency_matrix=args.adjacency_matrix)
 	# print model
 
 	# load weight

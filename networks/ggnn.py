@@ -6,10 +6,10 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import numpy as np
 
-class GGNNReasonBilinear(nn.Module):
+class GGNN(nn.Module):
 	def __init__(self, hidden_state_channel=10, output_channel=5,
 				time_step = 5, adjacency_matrix = '', num_classes = 3):
-		super(GGNNReasonBilinear, self).__init__()
+		super(GGNN, self).__init__()
 		self.time_step = time_step
 		self.hidden_state_channel = hidden_state_channel
 		self.output_channel = output_channel

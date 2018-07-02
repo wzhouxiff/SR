@@ -7,9 +7,9 @@ import cv2
 import json
 import random
 
-class FgBboxesGraph(data.Dataset):
+class SRDataset(data.Dataset):
 	def __init__(self, image_dir, feature_dir, list_path, input_transform = None, full_im_transform = None):
-		super(FgBboxesGraph, self).__init__()
+		super(SRDataset, self).__init__()
 
 		self.image_dir = image_dir
 		self.feature_dir = feature_dir

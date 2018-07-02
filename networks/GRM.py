@@ -3,18 +3,18 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from torch.autograd import Variable
-from first_glance import FirstGlance_v1
-from ggnn import GGNNReasonBilinear
+from person_pair import person_pair
+from ggnn import GGNN
 from torch.distributions import Bernoulli
 from vgg_v1 import vgg16_rois_v1
 import math
 
-class PiscBboxGraphVggReason(nn.Module):
+class GRM(nn.Module):
 	def __init__(self, num_class = 3,
 				ggnn_hidden_channel = 4098,
 				ggnn_output_channel = 512, time_step = 3,
 				attr_num = 80, adjacency_matrix=''):
-		super(PiscBboxGraphVggReason, self).__init__()
+		super(GRM, self).__init__()
 		self._num_class = num_class
 		self._ggnn_hidden_channel = ggnn_hidden_channel
 		self._ggnn_output_channel = ggnn_output_channel
@@ -24,11 +24,11 @@ class PiscBboxGraphVggReason(nn.Module):
 		self._graph_num = attr_num + num_class
 		
 
-		self.fg = FirstGlance_v1(num_class)
+		self.fg = person_pair(num_class)
 
 		self.full_im_net = vgg16_rois_v1(pretrained=False)
 
-		self.ggnn = GGNNReasonBilinear( hidden_state_channel = self._ggnn_hidden_channel,
+		self.ggnn = GGNN( hidden_state_channel = self._ggnn_hidden_channel,
 			output_channel = self._ggnn_output_channel,
 			time_step = self._time_step,
 			adjacency_matrix=self._adjacency_matrix,
