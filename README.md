@@ -20,8 +20,8 @@ Will be released soon...
     
 ## Result
 
-Methods|Intimate|Non-Intimate|No Relation
--|-|-|-
+Methods|Intimate|Non-Intimate|No Relation|mAP
+-|-|-|-|-
 Union CNN  | 72.1 | 81.8 | 19.2| 58.4
 Pair CNN  | 70.3 | 80.5 | 38.8 | 65.1
 Pair CNN + BBox + Union  | 71.1 | 81.2 | 57.9 | 72.2
