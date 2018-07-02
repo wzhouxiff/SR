@@ -20,7 +20,7 @@ Will be released soon...
     
 ## Result
 
-PISC - Coarse-level
+PISC: Coarse-level
 
 Methods|Intimate|Non-Intimate|No Relation|mAP
 -|-|-|-|-
@@ -31,7 +31,7 @@ Pair CNN + BBox + Global | 70.5 | 80.0 | 53.7 | 70.5
 Dual-glance | 73.1 | **84.2** | 59.6 | 79.7 | 35.4 | 79.7
 Ours | **81.7** | 73.4 | **65.5** | **82.8**
 
-PISC - Fine-level
+PISC: Fine-level
 
 Methods|Friends|Family|Couple|Professional|Commercial|No Relation|mAP
 -|-|-|-|-|-|-|-
@@ -41,6 +41,14 @@ Pair CNN + BBox + Union  | 32.5 | 62.1 | 73.9 | 61.4 | 46.0 | 52.1 | 56.9
 Pair CNN + BBox + Global | 32.2 | 61.7 | 72.6 | 60.8 | 44.3 | 51.0 | 54.6
 Dual-glance | 35.4 | **68.1** | **76.3** | 70.3 | **57.6** | 60.9 | 63.2
 Ours | **59.6** | 64.4 | 58.6 | **76.6** | 39.5 | **67.7** | **68.7**
+
+PIPA-relation: 
+
+Methods   | accuracy 
+Two stream CNN | 57.2
+Dual-Glance | 59.6 
+Ours  | **62.3**
+
 ## Citation
     
 
