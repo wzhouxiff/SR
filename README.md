@@ -20,6 +20,8 @@ Will be released soon...
     
 ## Result
 
+PISC - Coarse-level
+
 Methods|Intimate|Non-Intimate|No Relation|mAP
 -|-|-|-|-
 Union CNN  | 72.1 | 81.8 | 19.2| 58.4
@@ -29,20 +31,16 @@ Pair CNN + BBox + Global | 70.5 | 80.0 | 53.7 | 70.5
 Dual-glance | 73.1 | **84.2** | 59.6 | 79.7 | 35.4 | 79.7
 Ours | **81.7** | 73.4 | **65.5** | **82.8**
 
-\centering \multirow{2}{*}{Methods}  & \multicolumn{4}{|c||}{Coarse relationships}  & \multicolumn{7}{c}{Fine relationships} \\
-\cline{2-12} & \rotatebox{90}{} & \rotatebox{90}{} & \rotatebox{90}{} & \rotatebox{90}{mAP}  & \rotatebox{90}{Friends} & \rotatebox{90}{Family} & \rotatebox{90}{Couple} & \rotatebox{90}{Professional} & \rotatebox{90}{Commercial} & \rotatebox{90}{No Relation} & \rotatebox{90}{mAP}  \\
-\hline
-\hline
- &  & 29.9 & 58.5 & 70.7 & 55.4 & 43.0 & 19.6 & 43.5 \\
- &  & 30.2 & 59.1 & 69.4 & 57.5 & 41.9 & 34.2 & 48.2 \\
- &  & 32.5 & 62.1 & 73.9 & 61.4 & 46.0 & 52.1 & 56.9 \\
-Pair CNN + BBox + Global \cite{li2017dual}& 70.5 & 80.0 & 53.7 & 70.5 & 32.2 & 61.7 & 72.6 & 60.8 & 44.3 & 51.0 & 54.6 \\
-Dual-glance  \cite{li2017dual} & 73.1 & \textbf{84.2} & 59.6 & 79.7 & 35.4 & \textbf{68.1} & \textbf{76.3} & 70.3 & \textbf{57.6} & 60.9 & 63.2 \\
-\hline
-Ours & \textbf{81.7} & 73.4 & \textbf{65.5} & \textbf{82.8} & \textbf{59.6} & 64.4 & 58.6 & \textbf{76.6} & 39.5 & \textbf{67.7} & \textbf{68.7} \\
-\hline 
-\end{tabular}
+PISC - Fine-level
 
+Methods|Friends|Family|Couple|Professional|Commercial|No Relation|mAP
+-|-|-|-|-|-|-|-
+Union CNN | 29.9 | 58.5 | 70.7 | 55.4 | 43.0 | 19.6 | 43.5
+Pair CNN  | 30.2 | 59.1 | 69.4 | 57.5 | 41.9 | 34.2 | 48.2
+Pair CNN + BBox + Union  | 32.5 | 62.1 | 73.9 | 61.4 | 46.0 | 52.1 | 56.9
+Pair CNN + BBox + Global | 32.2 | 61.7 | 72.6 | 60.8 | 44.3 | 51.0 | 54.6
+Dual-glance | 35.4 | **68.1** | **76.3** | 70.3 | **57.6** | 60.9 | 63.2
+Ours | **59.6** | 64.4 | 58.6 | **76.6** | 39.5 | **67.7** | **68.7**
 ## Citation
     
 
