@@ -26,8 +26,8 @@ Union CNN  | 72.1 | 81.8 | 19.2| 58.4
 Pair CNN  | 70.3 | 80.5 | 38.8 | 65.1
 Pair CNN + BBox + Union  | 71.1 | 81.2 | 57.9 | 72.2
 Pair CNN + BBox + Global | 70.5 | 80.0 | 53.7 | 70.5
-Dual-glance | 73.1 | *84.2* | 59.6 | 79.7 | 35.4 | 79.7
-Ours | *81.7* | 73.4 | *65.5* | *82.8*
+Dual-glance | 73.1 | **84.2** | 59.6 | 79.7 | 35.4 | 79.7
+Ours | **81.7** | 73.4 | **65.5** | **82.8**
 
 \centering \multirow{2}{*}{Methods}  & \multicolumn{4}{|c||}{Coarse relationships}  & \multicolumn{7}{c}{Fine relationships} \\
 \cline{2-12} & \rotatebox{90}{} & \rotatebox{90}{} & \rotatebox{90}{} & \rotatebox{90}{mAP}  & \rotatebox{90}{Friends} & \rotatebox{90}{Family} & \rotatebox{90}{Couple} & \rotatebox{90}{Professional} & \rotatebox{90}{Commercial} & \rotatebox{90}{No Relation} & \rotatebox{90}{mAP}  \\
