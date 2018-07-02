@@ -21,5 +21,5 @@ Will be released soon...
     sh test.sh
 
 ### Contributing
-----
+***
 For any questions, bug(even typos) and/or features requests do not hesitate to contact me or open an issue!
