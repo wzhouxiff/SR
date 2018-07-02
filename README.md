@@ -2,8 +2,6 @@
 
 This repo includes the source code of the paper: "Deep Reasonging with Knowledge Graph for Social Relationship Understanding" (IJCAI 2018) by Zhouxia Wang, Tianshui Chen, Jimmy Ren, Weihao Yu, Hui Cheng, Liang Lin.
 
-Contact: Zhouxia Wang(zhouzi1212@gmail.com)
-
 ## Environment
 
 The code is tested on 64 bit Linux (Ubuntu 14.04 LTS), and besed on Pytorch with Python 2.7.
@@ -20,6 +18,13 @@ Will be released soon...
 
     sh test.sh
 
+## Citation
+    @inproceedings{Luo2018LSTMPose,
+        title={LSTM Pose Machines},
+        author={Yue Luo, Jimmy Ren, Zhouxia Wang, Wenxiu Sun, Jinshan Pan, Jianbo Liu, Jiahao Pang, Liang Lin},
+        booktitle={CVPR},
+        year={2018},
+    }
+
 ## Contributing
-***
 For any questions, bug(even typos) and/or features requests do not hesitate to contact me or open an issue!(zhouzi1212@gmail.com)
