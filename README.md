@@ -45,6 +45,7 @@ Ours | **59.6** | 64.4 | 58.6 | **76.6** | 39.5 | **67.7** | **68.7**
 PIPA-relation: 
 
 Methods   | accuracy 
+-|-
 Two stream CNN | 57.2
 Dual-Glance | 59.6 
 Ours  | **62.3**
