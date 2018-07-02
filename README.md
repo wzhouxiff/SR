@@ -17,14 +17,12 @@ Will be released soon...
 ## Test
 
     sh test.sh
+    
+## Result
+
 
 ## Citation
-    @inproceedings{Luo2018LSTMPose,
-        title={LSTM Pose Machines},
-        author={Yue Luo, Jimmy Ren, Zhouxia Wang, Wenxiu Sun, Jinshan Pan, Jianbo Liu, Jiahao Pang, Liang Lin},
-        booktitle={CVPR},
-        year={2018},
-    }
+    
 
 ## Contributing
 For any questions, bug(even typos) and/or features requests do not hesitate to contact me or open an issue!(zhouzi1212@gmail.com)
