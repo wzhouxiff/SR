@@ -51,7 +51,12 @@ Dual-Glance | 59.6
 Ours  | **62.3**
 
 ## Citation
-    
+    @inproceedings{Wang2018Deep,
+        title={Deep Reasoning with Knowledge Graph for Social Relationship Understanding},
+        author={Zhouxia Wang, Tianshui Chen, Jimmy Ren, Weihao Yu, Hui Cheng, Liang Lin},
+        booktitle={IJCAI},
+        year={2018},
+    }
 
 ## Contributing
 For any questions, bug(even typos) and/or features requests do not hesitate to contact me or open an issue!(zhouzi1212@gmail.com)
