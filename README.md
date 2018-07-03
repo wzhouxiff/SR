@@ -1,6 +1,6 @@
 # Deep Reasoning with Knowledge Graph for Social Relationship Understanding
 
-This repo includes the source code of the paper: "Deep Reasoning with Knowledge Graph for Social Relationship Understanding" (IJCAI 2018) by Zhouxia Wang, Tianshui Chen, Jimmy Ren, Weihao Yu, Hui Cheng, Liang Lin.
+This repo includes the source code of the paper: "[Deep Reasoning with Knowledge Graph for Social Relationship Understanding](https://arxiv.org/abs/1807.00504)" (IJCAI 2018) by Zhouxia Wang, Tianshui Chen, Jimmy Ren, Weihao Yu, Hui Cheng, Liang Lin.
 
 ## Environment
 
