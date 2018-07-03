@@ -24,28 +24,23 @@ Models, object boxes and ajacency matrices are in [HERE](https://pan.baidu.com/s
     PyTorch Relationship
 
     positional arguments:
-      DIR                   path to dataset
-      DIR                   path to feature (bbox of contextural)
-      DIR                   path to test list
+      DIR                       path to dataset
+      DIR                       path to feature (bbox of contextural)
+      DIR                       path to test list
 
     optional arguments:
-      -h, --help            show this help message and exit
-      -j N, --workers N     number of data loading workers (defult: 4)
-      -b N, --batch-size N  mini-batch size (default: 1)
-      --print-freq N, -p N  print frequency (default: 10)
-      --weights PATH        path to weights (default: none)
-      --scale-size SCALE_SIZE
-                            input size
-      --world-size WORLD_SIZE
-                            number of distributed processes
-      -n N, --num-classes N
-                            number of classes / categories
-      --write-out           write scores
-      --adjacency-matrix PATH
-                            path to adjacency-matrix of graph
-      --crop-size CROP_SIZE
-                            crop size
-      --result-path PATH    path for saving result (default: none)
+      -h, --help                show this help message and exit
+      -j N, --workers N         number of data loading workers (defult: 4)
+      -b N, --batch-size N      mini-batch size (default: 1)
+      --print-freq N, -p N      print frequency (default: 10)
+      --weights PATH            path to weights (default: none)
+      --scale-size SCALE_SIZE   input size
+      --world-size WORLD_SIZE   number of distributed processes
+      -n N, --num-classes N     number of classes / categories
+      --write-out               write scores
+      --adjacency-matrix PATH   path to adjacency-matrix of graph
+      --crop-size CROP_SIZE     crop size
+      --result-path PATH        path for saving result (default: none)
 
 ## Test
 Modified the path of data before running the script.
