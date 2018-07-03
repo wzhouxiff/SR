@@ -48,6 +48,7 @@ Models, object boxes and ajacency matrices are in [HERE](https://pan.baidu.com/s
       --result-path PATH    path for saving result (default: none)
 
 ## Test
+Modified the path of data before running the script.
 
     sh test.sh
     
