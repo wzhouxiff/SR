@@ -11,8 +11,8 @@ The code is tested on 64 bit Linux (Ubuntu 14.04 LTS), and besed on Pytorch with
 
 [PIPA-relation](https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/social-relation-recognition/) was released by Q. Sun et al. in CVPR 2017. It alse involves two-level relationship, 5 social domains and 16 social relations. In our experiment, we only focus on the 16 social relations.
 
-## Model && object box && adjacency matrix
-Will be released soon...
+## Models && object boxes && adjacency matrices
+Models, object boxes and ajacency matrices are in [HERE](https://pan.baidu.com/s/13tvWT5FmfvIFaBRE9nq1WQ).
 
 ## Test
 
