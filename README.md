@@ -14,6 +14,39 @@ The code is tested on 64 bit Linux (Ubuntu 14.04 LTS), and besed on Pytorch with
 ## Models && object boxes && adjacency matrices
 Models, object boxes and ajacency matrices are in [HERE](https://pan.baidu.com/s/13tvWT5FmfvIFaBRE9nq1WQ).
 
+## Usage
+    usage: test.py [-h] [-j N] [-b N] [--print-freq N] [--weights PATH]
+               [--scale-size SCALE_SIZE] [--world-size WORLD_SIZE] [-n N]
+               [--write-out] [--adjacency-matrix PATH] [--crop-size CROP_SIZE]
+               [--result-path PATH]
+               DIR DIR DIR
+
+    PyTorch Relationship
+
+    positional arguments:
+      DIR                   path to dataset
+      DIR                   path to feature (bbox of contextural)
+      DIR                   path to test list
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -j N, --workers N     number of data loading workers (defult: 4)
+      -b N, --batch-size N  mini-batch size (default: 1)
+      --print-freq N, -p N  print frequency (default: 10)
+      --weights PATH        path to weights (default: none)
+      --scale-size SCALE_SIZE
+                            input size
+      --world-size WORLD_SIZE
+                            number of distributed processes
+      -n N, --num-classes N
+                            number of classes / categories
+      --write-out           write scores
+      --adjacency-matrix PATH
+                            path to adjacency-matrix of graph
+      --crop-size CROP_SIZE
+                            crop size
+      --result-path PATH    path for saving result (default: none)
+
 ## Test
 
     sh test.sh
