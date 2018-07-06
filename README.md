@@ -7,9 +7,9 @@ This repo includes the source code of the paper: "[Deep Reasoning with Knowledge
 The code is implemented using the Pytorch library with Python 2.7 and has been tested on a desktop with the system of Ubuntu 14.04 LTS.
 
 ## Dataset
-[PISC](https://zenodo.org/record/1059155#.WznPu_F97CI) was released by [Li et al. in ICCV 2017](https://arxiv.org/abs/1708.00634). It involves two-level relationship, i.e., coarse-level relationships with 3 categories and fine-level relationships with 6 categories. More details can be found in the [link](https://zenodo.org/record/1059155#.WznPu_F97CI) or in our paper.
+[PISC](https://zenodo.org/record/1059155#.WznPu_F97CI) was released by [[Li et al. ICCV 2017](https://arxiv.org/abs/1708.00634)]. It involves two-level relationship, i.e., coarse-level relationships with 3 categories and fine-level relationships with 6 categories. More details can be found in the [link](https://zenodo.org/record/1059155#.WznPu_F97CI) or in our paper.
 
-[PIPA-relation](https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/social-relation-recognition/) was released by [Sun et al. in CVPR 2017](https://arxiv.org/abs/1704.06456). It covers 5 social domains, which can be further divided into 16 social relationships. On this dataset, we focus on the 16 social relationships.
+[PIPA-relation](https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/social-relation-recognition/) was released by [[Sun et al. CVPR 2017](https://arxiv.org/abs/1704.06456)]. It covers 5 social domains, which can be further divided into 16 social relationships. On this dataset, we focus on the 16 social relationships.
 
 ## Models && object boxes && adjacency matrices
 Trained models, object boxes and ajacency matrices are available in [baidu cloud](https://pan.baidu.com/s/13tvWT5FmfvIFaBRE9nq1WQ).
