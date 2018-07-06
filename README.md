@@ -4,7 +4,7 @@ This repo includes the source code of the paper: "[Deep Reasoning with Knowledge
 
 ## Environment
 
-The code is tested on 64 bit Linux (Ubuntu 14.04 LTS), and besed on Pytorch with Python 2.7.
+The code is implemented using the Pytorch library with Python 2.7 and has been tested on a desktop with the system of Ubuntu 14.04 LTS.
 
 ## Dataset
 [PISC](https://zenodo.org/record/1059155#.WznPu_F97CI) was released by J. Li et al. in ICCV 2017. It involves two-level relationship, coarse-level relationship(alias domain) which has 3 categories and fine-level relationship which has 6 categories. More details can be found in the [link](https://zenodo.org/record/1059155#.WznPu_F97CI) or in our paper.
