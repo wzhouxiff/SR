@@ -7,9 +7,9 @@ This repo includes the source code of the paper: "[Deep Reasoning with Knowledge
 The code is tested on 64 bit Linux (Ubuntu 14.04 LTS), and besed on Pytorch with Python 2.7.
 
 ## Dataset
-[PISC](https://zenodo.org/record/1059155#.WznPu_F97CI) was released by J. Li et al. in ICCV 2017. It involves two-level relationship, coarse-level relationship(alias domain) which has 3 categories and fine-level relationship which has 6 categories. More detail can be found in the [link](https://zenodo.org/record/1059155#.WznPu_F97CI) or in our paper.
+[PISC](https://zenodo.org/record/1059155#.WznPu_F97CI) was released by J. Li et al. in ICCV 2017. It involves two-level relationship, coarse-level relationship(alias domain) which has 3 categories and fine-level relationship which has 6 categories. More details can be found in the [link](https://zenodo.org/record/1059155#.WznPu_F97CI) or in our paper.
 
-[PIPA-relation](https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/social-relation-recognition/) was released by Q. Sun et al. in CVPR 2017. It alse involves two-level relationship, 5 social domains and 16 social relations. In our experiment, we only focus on the 16 social relations.
+[PIPA-relation](https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/social-relation-recognition/) was released by Q. Sun et al. in CVPR 2017. It also involves two-level relationship, 5 social domains and 16 social relations. In our experiment, we only focus on the 16 social relations.
 
 ## Models && object boxes && adjacency matrices
 Models, object boxes and ajacency matrices are in [HERE](https://pan.baidu.com/s/13tvWT5FmfvIFaBRE9nq1WQ).
@@ -24,30 +24,26 @@ Models, object boxes and ajacency matrices are in [HERE](https://pan.baidu.com/s
     PyTorch Relationship
 
     positional arguments:
-      DIR                   path to dataset
-      DIR                   path to feature (bbox of contextural)
-      DIR                   path to test list
+      DIR                       path to dataset
+      DIR                       path to feature (bbox of contextural)
+      DIR                       path to test list
 
     optional arguments:
-      -h, --help            show this help message and exit
-      -j N, --workers N     number of data loading workers (defult: 4)
-      -b N, --batch-size N  mini-batch size (default: 1)
-      --print-freq N, -p N  print frequency (default: 10)
-      --weights PATH        path to weights (default: none)
-      --scale-size SCALE_SIZE
-                            input size
-      --world-size WORLD_SIZE
-                            number of distributed processes
-      -n N, --num-classes N
-                            number of classes / categories
-      --write-out           write scores
-      --adjacency-matrix PATH
-                            path to adjacency-matrix of graph
-      --crop-size CROP_SIZE
-                            crop size
-      --result-path PATH    path for saving result (default: none)
+      -h, --help                show this help message and exit
+      -j N, --workers N         number of data loading workers (defult: 4)
+      -b N, --batch-size N      mini-batch size (default: 1)
+      --print-freq N, -p N      print frequency (default: 10)
+      --weights PATH            path to weights (default: none)
+      --scale-size SCALE_SIZE   input size
+      --world-size WORLD_SIZE   number of distributed processes
+      -n N, --num-classes N     number of classes / categories
+      --write-out               write scores
+      --adjacency-matrix PATH   path to adjacency-matrix of graph
+      --crop-size CROP_SIZE     crop size
+      --result-path PATH        path for saving result (default: none)
 
 ## Test
+Modify the path of data before running the script.
 
     sh test.sh
     
@@ -87,9 +83,9 @@ Ours  | **62.3**
     @inproceedings{Wang2018Deep,
         title={Deep Reasoning with Knowledge Graph for Social Relationship Understanding},
         author={Zhouxia Wang, Tianshui Chen, Jimmy Ren, Weihao Yu, Hui Cheng, Liang Lin},
-        booktitle={IJCAI},
+        booktitle={International Joint Conference on Artificial Intelligence},
         year={2018},
     }
 
 ## Contributing
-For any questions, bug(even typos) and/or features requests do not hesitate to contact me or open an issue!(zhouzi1212@gmail.com)
+For any questions, feel free to open an issue or contact us (zhouzi1212@gmail.com & tianshuichen@gmail.com)
