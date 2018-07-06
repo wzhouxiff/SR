@@ -84,7 +84,7 @@ Ours  | **62.3**
         title={Deep Reasoning with Knowledge Graph for Social Relationship Understanding},
         author={Zhouxia Wang, Tianshui Chen, Jimmy Ren, Weihao Yu, Hui Cheng, Liang Lin},
         booktitle={International Joint Conference on Artificial Intelligence},
-        year={2018},
+        year={2018}
     }
 
 ## Contributing
