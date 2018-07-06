@@ -8,11 +8,11 @@ import json
 import random
 
 class SRDataset(data.Dataset):
-	def __init__(self, image_dir, feature_dir, list_path, input_transform = None, full_im_transform = None):
+	def __init__(self, image_dir, objects_dir, list_path, input_transform = None, full_im_transform = None):
 		super(SRDataset, self).__init__()
 
 		self.image_dir = image_dir
-		self.feature_dir = feature_dir
+		self.objects_dir = objects_dir
 		self.input_transform = input_transform
 		self.full_im_transform = full_im_transform
 		self.names = []
@@ -100,7 +100,7 @@ class SRDataset(data.Dataset):
 		else:
 			full_im = img
 
-		path = os.path.join(self.feature_dir, self.names[index].split('.')[0] + '.json')
+		path = os.path.join(self.objects_dir, self.names[index].split('.')[0] + '.json')
 
 		(w, h) = img.size
 		bboxes_categories = json.load(open(path))

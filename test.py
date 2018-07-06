@@ -27,7 +27,7 @@ model_names = sorted(name for name in models.__dict__
 
 parser = argparse.ArgumentParser(description='PyTorch Relationship')
 parser.add_argument('data', metavar='DIR', help='path to dataset')
-parser.add_argument('feature', metavar='DIR', help='path to feature (bbox of contextural)')
+parser.add_argument('objects', metavar='DIR', help='path to objects (bboxes and categories)')
 parser.add_argument('testlist', metavar='DIR', help='path to test list')
 parser.add_argument('-j', '--workers', default=4, type=int, metavar='N',
 					help='number of data loading workers (defult: 4)')
@@ -54,7 +54,7 @@ parser.add_argument('--result-path', default='', type=str, metavar='PATH',
 
 best_prec1 = 0
 
-def get_test_set(data_dir, feature_dir, test_list):
+def get_test_set(data_dir, objects_dir, test_list):
 	normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
 									 std=[0.229, 0.224, 0.225])
 	scale_size = args.scale_size
@@ -70,7 +70,7 @@ def get_test_set(data_dir, feature_dir, test_list):
 			transforms.ToTensor(),
 			normalize])  # what about horizontal flip
 
-	test_set = SRDataset(data_dir, feature_dir, test_list, test_data_transform, test_full_transform )
+	test_set = SRDataset(data_dir, objects_dir, test_list, test_data_transform, test_full_transform )
 	test_loader = DataLoader(dataset=test_set, num_workers=args.workers,
 							batch_size=args.batch_size, shuffle=False)
 	return test_loader
@@ -84,8 +84,8 @@ def main():
 	print '====> Creating dataloader...'
 	data_dir = args.data
 	test_list = args.testlist
-	feature_dir = args.feature
-	test_loader = get_test_set(data_dir, feature_dir, test_list)
+	objects_dir = args.objects
+	test_loader = get_test_set(data_dir, objects_dir, test_list)
 
 	# load network
 	print '====> Loading the network...'
