@@ -3,7 +3,7 @@
 # Path to Images
 ImagePath=""
 # Path to object boxes
-BoxesPath="Path/SR/objects/PISC_objects/"
+ObjectsPath="Path/SR/objects/PISC_objects/"
 # Path to test list
 TestList="Path/SR/list/PISC_fine_level_test.txt"
 # Path to adjacency matrix
@@ -16,5 +16,5 @@ ResultPath=""
 ModelPath="Path/SR/models/PISC_fine_level.pth.tar"
 echo $ModelPath
 
-python test.py $ImagePath $BoxesPath $TestList --weight $ModelPath --adjacency-matrix $AdjMatrix -n $num -b 1 --print-freq 100 --write-out --result-path $ResultPath
+python test.py $ImagePath $ObjectssPath $TestList --weight $ModelPath --adjacency-matrix $AdjMatrix -n $num -b 1 --print-freq 100 --write-out --result-path $ResultPath
 
