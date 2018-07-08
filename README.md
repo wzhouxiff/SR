@@ -4,12 +4,12 @@ This repo includes the source code of the paper: "[Deep Reasoning with Knowledge
 
 ## Environment
 
-The code is tested on 64 bit Linux (Ubuntu 14.04 LTS), and besed on Pytorch with Python 2.7.
+The code is implemented using the Pytorch library with Python 2.7 and has been tested on a desktop with the system of Ubuntu 14.04 LTS.
 
 ## Dataset
-[PISC](https://zenodo.org/record/1059155#.WznPu_F97CI) was released by J. Li et al. in ICCV 2017. It involves two-level relationship, coarse-level relationship(alias domain) which has 3 categories and fine-level relationship which has 6 categories. More details can be found in the [link](https://zenodo.org/record/1059155#.WznPu_F97CI) or in our paper.
+[PISC](https://zenodo.org/record/1059155#.WznPu_F97CI) was released by [[Li et al. ICCV 2017](https://arxiv.org/abs/1708.00634)]. It involves two-level relationship, i.e., coarse-level relationships with 3 categories and fine-level relationships with 6 categories.
 
-[PIPA-relation](https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/social-relation-recognition/) was released by Q. Sun et al. in CVPR 2017. It also involves two-level relationship, 5 social domains and 16 social relations. In our experiment, we only focus on the 16 social relations.
+[PIPA-relation](https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/human-activity-recognition/social-relation-recognition/) was released by [[Sun et al. CVPR 2017](https://arxiv.org/abs/1704.06456)]. It covers 5 social domains, which can be further divided into 16 social relationships. On this dataset, we focus on the 16 social relationships.
 
 ## Models && objects && adjacency matrices
 Models, objects and ajacency matrices are in [HERE](https://pan.baidu.com/s/13tvWT5FmfvIFaBRE9nq1WQ).
@@ -84,7 +84,7 @@ Ours  | **62.3**
         title={Deep Reasoning with Knowledge Graph for Social Relationship Understanding},
         author={Zhouxia Wang, Tianshui Chen, Jimmy Ren, Weihao Yu, Hui Cheng, Liang Lin},
         booktitle={International Joint Conference on Artificial Intelligence},
-        year={2018},
+        year={2018}
     }
 
 ## Contributing
